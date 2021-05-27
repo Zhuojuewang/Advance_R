@@ -1,0 +1,14 @@
+> factorial_output
+Unit: microseconds
+                      expr     min       lq      mean   median       uq      max neval
+   a <- Factorial_loop(10)   1.000   1.3505   2.18902   2.0000   2.3020   15.501   100
+ b <- Factorial_reduce(10) 196.200 199.3015 226.03310 202.3005 229.1515 1268.601   100
+   c <- Factorial_func(10)   5.301   5.6010   6.62400   6.3005   6.8010   19.400   100
+    d <- Factorial_mem(10)   4.501   5.3005   8.66904   8.8005  10.0005   26.601   100
+> factorial_output1
+Unit: microseconds
+                       expr      min        lq       mean    median       uq      max neval
+   a <- Factorial_loop(100)    2.801    3.5010    6.45203    6.7510    7.651   42.601   100
+ b <- Factorial_reduce(100) 1446.702 1562.4020 1791.41117 1677.5515 1864.501 3114.201   100
+   c <- Factorial_func(100)   53.301   58.9005   85.68609   82.7010   96.652  370.201   100
+    d <- Factorial_mem(100)    5.601    8.0015   21.91903   25.3515   30.251   57.801   100
